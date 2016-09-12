@@ -1,4 +1,5 @@
-Reza a lenda que ouvi de um sonhador que o presente está carente de amor.
-Não trocaria um sorvete de flocos por você.
-Mentira, trocaria sim.
-FLOCOS.
+Bom, navegar entre commits não é exatamente desafiador, eu sei... mas todo mundo começa de algum lugar, não é mesmo?
+
+Vamos a um outro tipo de navegação... faça o checkout de um branch. Qual?
+
+"It's not a bug it's a..."

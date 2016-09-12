@@ -1,5 +1,3 @@
-Bom, navegar entre commits não é exatamente desafiador, eu sei... mas todo mundo começa de algum lugar, não é mesmo?
-
-Vamos a um outro tipo de navegação... faça o checkout de um branch. Qual?
-
-"It's not a bug it's a..."
+Na verdade, esse commit tecnicamente não existe. Ele não passa de um pigmento da sua imaginação.
+Caso você esteja se perguntanto, pigmento nada mais é que a fusão da bala com um porco, gerada por alienígenas 
+controladores de mentes com mais de 7 inteligências.

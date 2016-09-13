@@ -1,4 +1,2 @@
-Vamos brincar de acrônimos recursivos. 
-Em algum momento alguém decidiu que computação poderia ser engraçado e criaram o acrônimo recursivo. 
-É mais fácil mostrar um exemplo pra explicar: BING significa BING Is Not Google. Sério. Isso é um acrônimo recursivo, em que ele é definido a partir dele mesmo. 
-Outros exemplos fantásticos são VISA (VISA International Services Association),   PNG (PNG Not Gif). E claro, LINUX.
+A gente já tá ficando muito sem assunto, então fica aqui a nossa homenagem à Grace Hopper. Todo programador que não gosta de assembly e linguagem de máquina tem que ter um altar pra essa mulher, porque ela criou o primeiro compilador.
+Pesquisem sobre ela, sério.

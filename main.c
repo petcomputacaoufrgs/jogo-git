@@ -1,3 +1,4 @@
+#include <conio2.h>
 #include <conio.h>
 #include <stdio.h>
 #include <sys/time.h>
@@ -148,9 +149,24 @@ void inverte(PONTUACAO pontuacao[], int inicio, int fim);
 int separa_inversao(PONTUACAO pontuacao[], int inicio, int fim);
 int jogos_salvos(char nomes[10][20]);
 
+//Main
 int main()
 {
+    carregando();
+    clrscr();
 
+    char choice;//Char usado para selecionar as diferentes telas do menu
+    int i=0;
+    //Loop do menu
+    do
+    {
+        _setcursortype( _NOCURSOR );
+        choice=menu(0);
+        le_escolha (choice,0);
+    }
+    while (choice != 27); //Opcao 'Encerra jogo' retorna 27
+
+    return 0;
 }
 
 //Funcoes auxiliares
@@ -386,95 +402,27 @@ void backstory (int nivel)
 
     if (nivel == 1)
         {
-//            gotoxy(13,10);
-//            printf (" Voce ganha consciencia em uma sala escura e estranha.");
-//            gotoxy(13,11);
-//            printf ("Ela lhe parece familiar, mas as pessoas a sua frente nao");
-//            gotoxy(25,12);
-//            printf ("parecem estar a vontade contigo.");
-//            gotoxy (13,14);
-//            printf ("Onde exatamente voce arranjou essa arma? Bom, nao importa");
-//            gotoxy (13,15);
-//            printf ("O importante eh desviar dos tiros e escapar por aquela porta.");
-            strcpy(historia, "Voce se encontra em uma sala estranha.As pessoas a sua frente nao parecem felizes em te ver.Onde exatamente voce arranjou essa arma?Bom, nao importa.O importante eh desviar dos tiros e escapar por aquela porta.");
+        strcpy(historia, "Voce se encontra em uma sala estranha.As pessoas a sua frente nao parecem felizes em te ver.Onde exatamente voce arranjou essa arma?Bom, nao importa.O importante eh desviar dos tiros e escapar por aquela porta.");
         }
     if (nivel == 2)
     {
-//        gotoxy(13,10);
-//        printf ("O ultimo guarda a ser derrubado possuía a chave da porta.");
-//        gotoxy(14,11);
-//        printf ("Voce caminha em direcao a porta buscando a liberdade, ");
-//        gotoxy(25,12);
-//        printf (" como se uma forca o guiasse.");
-//        gotoxy(30,14);
-//        printf ("Finalmente estaria livre?");
-
         strcpy(historia, "O ultimo guarda a ser derrubado possuia a chave.Voce caminha em direcao a porta buscando a liberdade.Sera que voce finalmente estava livre?");
     }
     if (nivel == 3)
     {
-//        gotoxy (11,10);
-//        printf ("Voce encontra outra sala cheia de pessoas armadas para te matar.");
-//        gotoxy (14,11);
-//        printf ("Porque os tiros desses terroristas sao mais rapidos?");
-//        gotoxy (25, 13);
-//        printf ("E tudo parece tao limpo aqui dentro...");
-//        gotoxy (21, 14);
-//        printf ("Os corpos desaparecem sem deixar vestigios.");
-//        gotoxy (10, 15);
-//        printf ("O local esta silencioso e funebre, deixando a cena mais bizarra. ");
-//        gotoxy (10,16);
-//        printf ("Ainda procurando pela saida, voce usa a nova chave para sair da sala.");
         strcpy(historia, "Voce encontra outra sala cheia de pessoas armadas para te matar.Os tiros desses terroristas por algum motivo sao mais rapidos.Os corpos desaparecem rapidamente, sem deixar vestigios.O local esta silencioso e funebre, deixando a cena mais bizarra.Ainda procurando pela saida, voce segue em frente.");
     }
     if (nivel == 4)
     {
-//        gotoxy (8,10);
-//        printf ("Porém mais uma vez voce da de cara com guardas que tentavam captura-lo.");
-//        gotoxy (7, 11);
-//        printf ("A situacao piora. Quanto mais guardas voce mata, menos real isso parece.");
-//        gotoxy (15,12);
-//        printf ("Quem seria o responsavel por tantas salas identicas!?");
-//        gotoxy (13,13);
-//        printf ("Nao importa. Basta se concentrar e atingir seu objetivo:");
-//        gotoxy (30,14);
-//        printf (" fugir dessa prisao.");
         strcpy(historia, "Mais uma vez voce da de cara com guardas tentando captura-lo.Quanto mais guardas voce mata, menos real isso parece.Quem seria o responsavel por tantas salas identicas!?Nao interessa, o que importa e fugir dessa prisao.");
-
     }
     if (nivel == 5)
     {
-//        gotoxy (20,10);
-//        printf ("Esse local parece nao possuir limites.");
-//        gotoxy (15,11);
-//        printf ("Uma batalha apos a outra, porque tentar mais vezes?");
-//        gotoxy (17,13);
-//        printf ("Mesmo assim, voce se prepara, e abre a porta");
-//        gotoxy (25,14);
-//        printf ("Hora de matar esses guardas.");
         strcpy(historia, "Esse local parece nao possuir limites.Uma batalha apos a outra, porque tentar mais vezes?Mesmo assim, voce se prepara e segue em frente.");
-
     }
     if (nivel == 6)
     {
-//        gotoxy (7,10);
-//        printf ("Voce sai pela sala e finalmente avista a liberdade. Voce conseguiu. ");
-//        gotoxy (13,11);
-//        printf ("Irao pensar duas vezes antes de persegui-lo novamente.");
-//        Sleep (4000);
-//        gotoxy (10,13);
-//        printf ("Seus anos de treinamento finalmente mostraram sua utilidade,");
-//        gotoxy (13,14);
-//        printf ("ainda que ele servisse apenas para matar policiais.");
-//        gotoxy (15,15);
-//        Sleep (3000);
-//        printf ("Esse tempo preso sera uma memoria desagradavel,");
-//        gotoxy (7,16);
-//        printf ("Mas nada alem disso. A policia te pegou uma vez, mas foi pura sorte. ");
-//        Sleep (7000);
-//        gotoxy (12,18);
-//        printf ("E voce ja decidiu que isso nao vai acontecer de novo. ");
-        strcpy(historia, "Voce sai pela sala e finalmente se encontra ao ar livre.Esse tempo preso nao sera nada alem de uma lembranca desagradavel.A policia te pegou uma vez, mas foi pura sorte.E voce ja decidiu que isso nao vai acontecer de novo.");
+    strcpy(historia, "Voce sai pela sala e finalmente se encontra ao ar livre.Esse tempo preso nao sera nada alem de uma lembranca desagradavel.A policia te pegou uma vez, mas foi pura sorte.E voce ja decidiu que isso nao vai acontecer de novo.");
     }
 
     gotoxy(13, 10);
@@ -817,7 +765,6 @@ int passa_nivel (REFEM *jogador, int tempo_final)
     }
     return 0;
 }
-
 void reimprime_jogo(INIMIGO inimigo[], TIRO tiro[], int num_inimigos)
 {
     int i;
@@ -1347,27 +1294,6 @@ int colisao_nao_elastica_inimigo(TIRO tiro[], INIMIGO inimigo[], CHAVE *chave, i
     }
 return 0;
 }
-
-void yaarr(int you_are, int *num_pirates){
-    
-    int pirate = 0;
-    /*
-        Se a pessoa for identificada como pirata, a função deve executar os seguintes comandos:
-        {
-            printf("YAARRR\n");
-            printf("YOU ARE A PIRATE!\n");
-            num_pirates++;
-        }
-            NÃO SE ESQUEÇA DE SEGUIR O PADRÃO DAS CHAVES, UMA LOGO EMBAIXO DO IF E UMA LOGO EMBAIXO DA ÚLTIMA FUNÇÃO! É PRA SER QUE NEM ESTÁ ALI EM CIMA!
-    */
-    if (you_are == pirate)
-
-        printf("YAARRR\n");
-        printf("YOU ARE A PIRATE!\n");
-        num_pirates++;
-
-};
-
 
 //Funcoes de salvar
 int salva_pontuacao(REFEM jogador)

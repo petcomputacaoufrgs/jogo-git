@@ -1,2 +1,4 @@
-Pessoas, vamos falar de Programação Orientado a Gambiarra. Aquele paradigma que é tão intuitivo que você provavelmente já programou nele sem nem saber que ele existia.
-Sério, quem nunca fez uma gambiarra pra conseguir terminar aquele trabalho final que tem que ser entregue em dois dias? Aquela função que insiste em retornar o valor errado, aquele if que nunca é verdadeiro por causa de um /t escondido que não aparece na ferramenta de debug (printf, claro)... Até que tentam nos ensinar a fazer tudo direitinho, mas não adianta. É inveitável, do POG viemos e ao POG voltaremos.
+Último nível! Quase lá!
+
+Procure por um bug na função yaarr (use git grep).
+Crie um novo branch para corrigir esse problema, e faça o merge com o branch do paradoxo do Flash depois de pronto. Mas não se assuste se não der tudo certo como na última vez...

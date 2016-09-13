@@ -1348,15 +1348,24 @@ int colisao_nao_elastica_inimigo(TIRO tiro[], INIMIGO inimigo[], CHAVE *chave, i
 return 0;
 }
 
-void yaarr(int you_are){
+void yaarr(int you_are, int *num_pirates){
     
     int pirate = 0;
     /*
-        Função a ser expandida ainda. Mais falas de pirata a serem adicionadas.
+        Se a pessoa for identificada como pirata, a função deve executar os seguintes comandos:
+        {
+            printf("YAARRR\n");
+            printf("YOU ARE A PIRATE!\n");
+            num_pirates++;
+        }
+            NÃO SE ESQUEÇA DE SEGUIR O PADRÃO DAS CHAVES, UMA LOGO EMBAIXO DO IF E UMA LOGO EMBAIXO DA ÚLTIMA FUNÇÃO! É PRA SER QUE NEM ESTÁ ALI EM CIMA!
     */
     if (you_are == pirate)
+
         printf("YAARRR\n");
-    
+        printf("YOU ARE A PIRATE!\n");
+        num_pirates++;
+
 };
 
 

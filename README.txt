@@ -2,3 +2,7 @@ Seu problema agora é encontrar um bug. A linha onde ele está localizado é a resp
 Arrume o bug, crie um novo branch para ele e dê um commit.
 
 Em seguida, faça um merge com o commit cujo comentário é o significado da sigla Linux.
+
+*****PARA IR PARA O PRÓXIMO NÍVEL*******
+
+Volte para o branch main e dê checkout no commit com o comentário que TEMOS QUE PEGAR!

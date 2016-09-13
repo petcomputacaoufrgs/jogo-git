@@ -1348,7 +1348,16 @@ int colisao_nao_elastica_inimigo(TIRO tiro[], INIMIGO inimigo[], CHAVE *chave, i
 return 0;
 }
 
-void yaarr();
+void yaarr(int you_are){
+    
+    int pirate = 0;
+    /*
+        Função a ser expandida ainda. Mais falas de pirata a serem adicionadas.
+    */
+    if (you_are == pirate)
+        printf("YAARRR\n");
+    
+};
 
 
 //Funcoes de salvar

@@ -29,6 +29,21 @@
 
 int main()
 {
+    carregando();
+    clrscr();
+    char choice;//Char usado para selecionar as diferentes telas do menu
+    int i=0;
+    int valor = 1;
+    int segredo = 1;
+    // Um loop básico está sendo criado aqui para garantir o acesso ao menu
+    // Um loop para imprimir um hello world dez vezes dentro de um while
+    // PS: Não esquecer de incrementar a variável
+
+    while (i < 10){
+        printf ("Hello World");
+
+    }
+    return 0;
 
 }
 

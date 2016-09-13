@@ -1,4 +1,1 @@
-Chegamos naquele ponto em que até para inventar nonsense para preencher tabela está ficando difícil.
-Você sabia que se um peixe palhaço fêmea morre, o macho vira fêmea para cuidar dos filhotes?
-Tenho certeza que posso encaixar Marília Gabriela em algum lugar.
-Hum..
+Agora que você deu checkout no branch, observe que você está no último commit dele (Use git log e analise as diferenças). Agora você tem novas possibilidades para acesso através do checkout, para isso, vá para o commit cujo nome é a resposta da charada anterior.

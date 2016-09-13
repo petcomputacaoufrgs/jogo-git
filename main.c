@@ -150,7 +150,7 @@ int jogos_salvos(char nomes[10][20]);
 
 int main()
 {
-
+    printf("E assim ocorre um conflito no Git. Ninguém gosta dessa parte, mas sempre acontece.");
 }
 
 //Funcoes auxiliares

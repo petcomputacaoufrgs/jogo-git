@@ -1,2 +1,1 @@
-A gente já tá ficando muito sem assunto, então fica aqui a nossa homenagem à Grace Hopper. Todo programador que não gosta de assembly e linguagem de máquina tem que ter um altar pra essa mulher, porque ela criou o primeiro compilador.
-Pesquisem sobre ela, sério.
+Você já ouviu falar da lenda Marília Gabriela? Diz os boatos que se você ficar de frente com Marília Gabriela receberá uma entrevista inesquecível que será apenas Marília Gabriela divagando sobre tópicos conforme se aproxima inevitavelmente do assunto que Marília Gabriela quer chegar. Claro, esse limite se encontra no infinito, ou um pouco depois.

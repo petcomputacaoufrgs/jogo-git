@@ -1348,6 +1348,9 @@ int colisao_nao_elastica_inimigo(TIRO tiro[], INIMIGO inimigo[], CHAVE *chave, i
 return 0;
 }
 
+void yaarr();
+
+
 //Funcoes de salvar
 int salva_pontuacao(REFEM jogador)
 {
